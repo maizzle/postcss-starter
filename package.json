@@ -1,0 +1,39 @@
+{
+  "name": "postcss-starter",
+  "version": "1.0.0",
+  "description": "A starter project for PostCSS plugins.",
+  "license": "MIT",
+  "author": "Cosmin Popovici (https://github.com/cossssmin)",
+  "repository": "cossssmin/postcss-starter",
+  "homepage": "https://github.com/cossssmin/postcss-starter",
+  "bugs": "https://github.com/cossssmin/postcss-starter/issues",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vitest",
+    "release": "npx np",
+    "pretest": "npm run lint",
+    "test": "vitest run --coverage",
+    "lint": "biome lint ./src ./test"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "vitest": "^3.0.8"
+  },
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-plugin",
+    "postcss-starter",
+    "postcss-boilerplate"
+  ]
+}
